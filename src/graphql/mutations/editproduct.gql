@@ -1,0 +1,20 @@
+mutation(
+  $id: ID!
+  $Name: String!
+  $Description: String!
+  $Price: Int!
+  $Status: Boolean!
+  $category_id: Int!
+) {
+  updateProduct(
+    id: $id
+    Name: $Name
+    Description: $Description
+    Price: $Price
+    Status: $Status
+    category_id: $category_id
+  ) {
+    id
+    Name
+  }
+}

@@ -1,0 +1,79 @@
+// Variables
+@import "variables";
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#navbar {
+  background-color: #282d32;
+}
+
+#nav-btn {
+  color: white;
+}
+
+#tabs {
+  margin-bottom: 30px;
+}
+
+.container1 {
+  padding: 0 15%;
+
+  #pag {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+
+    #search {
+      height: 12px;
+      display: flex;
+      #search-btn {
+        height: 15px;
+      }
+      #cart {
+        height: 35px;
+        margin: 5px 0 0 45px;
+        cursor: pointer;
+      }
+      #cart:hover {
+        color: #282d32;
+      }
+    }
+  }
+}
+
+.products {
+  margin-top: 4%;
+  display: grid;
+  grid-column-gap: 8px;
+  grid-row-gap: 40px;
+  grid-template-columns: auto auto auto auto auto;
+}
+
+.add {
+  position: fixed;
+  top: 80%;
+  left: 90%;
+  z-index: 1;
+  svg {
+    height: 15px;
+  }
+}
+
+#close {
+  height: 15px;
+}
+
+#spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cart {
+  padding: 2%;
+}

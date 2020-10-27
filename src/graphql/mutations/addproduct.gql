@@ -1,0 +1,18 @@
+mutation(
+  $Name: String!
+  $Description: String!
+  $Price: Int!
+  $Status: Boolean!
+  $category_id: Int!
+) {
+  createProduct(
+    Name: $Name
+    Description: $Description
+    Price: $Price
+    Status: $Status
+    category_id: $category_id
+  ) {
+    id
+    Name
+  }
+}
